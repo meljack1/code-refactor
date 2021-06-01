@@ -1,30 +1,44 @@
+/* Ensures all elements have border-box sizing, 0 padding and 0 margin. */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Background colour of body element is set here */
+
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* HEADER STYLING */
+
+/* Header element: set padding, font family, background colour and font colour */
+
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+/* h1 elements within a parent header element display as inline block elements with a font size of 48px */
+
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+/* Elements with the .seo class within the header h1 have a grey font colour */
+
+header h1 .seo {
     color: #d9dcd6;
 }
 
-.header nav {
+/* Nav element within the header floats to the right of its parent (the header). Top padding, right margin, font family and font size are also set here */
+
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,23 +46,36 @@ body {
     font-size: 20px;
 }
 
-.header nav ul {
+/* Removes styling from ul elements within the nav element in the header. */
+
+header nav ul {
     list-style-type: none;
 }
 
-.header nav ul li {
+/* List items within the ul in the header's nav element display as inline block elements with a left margin of 25px */
+
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
+/* Text link (<a>) elements have a font colour of white and no text decoration (e.g. underline removed) */
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Paragraph elements have a font size of 16px */
+
 p {
     font-size: 16px;
 }
+
+/* LARGE MAIN IMAGE STYLING */
+
+/* Element with the hero class has a large background image which takes up the entire element */
+/* Width is as wide as the containing block, height is 800px. */
 
 .hero {
     height: 800px;
@@ -59,23 +86,31 @@ p {
     background-position: center;
 }
 
+/* Makes elements with the float-left class float to the left-hand side of their parent */
+
 .float-left {
     float: left;
     margin-right: 25px;
 }
+
+/* Makes elements with the float-right class float to the right-hand side of their parent */
 
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-.content {
+/* Main element has a width 75% of the size of the containing block */
+
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+/* Aside element floats to the right of its parent (body), has a width of 20% of the body and height 100% of the body*/
+
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -86,55 +121,34 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* Sections in the aside element have a bottom margin of 32px and text colour of white*/
+
+aside section {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+/* h3 elements in sections within the aside element are aligned to the centre with a bottom margin of 10px */
 
-.benefit-lead h3 {
+aside section h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* Image elements in sections within the aside element display as blocks */
+/* top/bottom margin of 10px, left/right margin automatically calculated (so image centres) */
+aside section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+/* Section elements within the main element have: */
+/* a height of 300px, bottom margin of 20px, padding of 50px. Also sets background colour, font colour and font family */
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+main section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,58 +157,32 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+/* Image elements within sections in the main element have a max height of 200px */
 
-.search-engine-optimization img {
+main section img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
 
-.social-media-marketing img {
-    max-height: 200px;
-}
+/* h2 elements within sections in the main element have bottom margin 20px, font size 36px*/
 
-.search-engine-optimization h2 {
+main section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+/* Footer element doesn't allow floating elements to either the left or right. Also sets padding, centres text, and sets font-family of footer class element */
 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h4 {
+/* h4 element within footer element has font size of 20px */
+
+footer h4 {
     font-size: 20px;
 }
