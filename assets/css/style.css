@@ -77,7 +77,6 @@ p {
 /* Element with the hero id has width is as wide as the containing block, height is 800px. */
 
 #hero {
-    height: 800px;
     width: 100%;
     margin-bottom: 25px;
 }
