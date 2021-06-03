@@ -129,9 +129,9 @@ aside section {
 }
 
 
-/* h3 elements in sections within the aside element are aligned to the centre with a bottom margin of 10px */
+/* h2 elements in sections within the aside element are aligned to the centre with a bottom margin of 10px */
 
-aside section h3 {
+aside section h2 {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -181,8 +181,8 @@ footer {
     text-align: center;
 }
 
-/* h4 element within footer element has font size of 20px */
+/* Element with copyright id has font size of 20px */
 
-footer h4 {
+#copyright {
     font-size: 20px;
 }
