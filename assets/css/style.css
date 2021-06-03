@@ -74,16 +74,12 @@ p {
 
 /* LARGE MAIN IMAGE STYLING */
 
-/* Element with the hero class has a large background image which takes up the entire element */
-/* Width is as wide as the containing block, height is 800px. */
+/* Element with the hero id has width is as wide as the containing block, height is 800px. */
 
 #hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 /* Makes elements with the float-left class float to the left-hand side of their parent */
